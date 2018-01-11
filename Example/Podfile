@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HLSNSKit_Example' do
+  pod 'HLSNSKit', :path => '../'
+
+  target 'HLSNSKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
