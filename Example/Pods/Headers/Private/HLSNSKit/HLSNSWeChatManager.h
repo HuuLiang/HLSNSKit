@@ -1,0 +1,1 @@
+../../../../../HLSNSKit/Wechat/HLSNSWeChatManager.h

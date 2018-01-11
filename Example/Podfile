@@ -1,11 +1,9 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/HuuLiang/HLPodRepo.git'
+
+platform :ios, '8.0'
 
 target 'HLSNSKit_Example' do
   pod 'HLSNSKit', :path => '../'
-
-  target 'HLSNSKit_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  
 end

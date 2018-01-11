@@ -1,0 +1,63 @@
+{
+  "name": "HLSNSKit",
+  "version": "0.1.0",
+  "summary": "For HLSNSKit",
+  "description": "HLSNSKit use for other HuLiang's podspec，please indicate source when use!",
+  "homepage": "https://github.com/HuuLiang/HLSNSKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HuLiang": "Lingola@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/HuuLiang/HLSNSKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "HLSNSKit/Core/*",
+      "public_header_files": "HLSNSKit/Core/*.h"
+    },
+    {
+      "name": "QQ",
+      "source_files": "HLSNSKit/QQ/*",
+      "public_header_files": "HLSNSKit/QQ/*.h",
+      "dependencies": {
+        "HLExtensions/Core": [
+
+        ],
+        "HLTPLKit/Tencent": [
+
+        ],
+        "HLSNSKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Wechat",
+      "source_files": "HLSNSKit/Wechat/*",
+      "public_header_files": "HLSNSKit/Wechat/*.h",
+      "dependencies": {
+        "AFNetworking": [
+
+        ],
+        "HLTPLKit/Wechat": [
+
+        ],
+        "HLExtensions/Core": [
+
+        ],
+        "HLSNSKit/Core": [
+
+        ]
+      }
+    }
+  ]
+}

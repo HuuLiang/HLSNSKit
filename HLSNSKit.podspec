@@ -1,42 +1,39 @@
-#
-# Be sure to run `pod lib lint HLSNSKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'HLSNSKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HLSNSKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'For HLSNSKit'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                      HLSNSKit use for other HuLiang's podspec，please indicate source when use!
                        DESC
 
-  s.homepage         = 'https://github.com/757437150@qq.com/HLSNSKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/HuuLiang/HLSNSKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '757437150@qq.com' => '757437150@qq.com' }
-  s.source           = { :git => 'https://github.com/757437150@qq.com/HLSNSKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { 'HuLiang' => 'Lingola@qq.com' }
+  s.source           = { :git => 'https://github.com/HuuLiang/HLSNSKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
+  # s.default_subspec = 'Core'
 
-  s.source_files = 'HLSNSKit/Classes/**/*'
+  s.subspec 'Core' do |core|
+    core.source_files           = 'HLSNSKit/Core/*'
+    core.public_header_files    = 'HLSNSKit/Core/*.h'
+  end
   
-  # s.resource_bundles = {
-  #   'HLSNSKit' => ['HLSNSKit/Assets/*.png']
-  # }
+  s.subspec 'QQ' do |qq|
+    qq.source_files             = 'HLSNSKit/QQ/*'
+    qq.public_header_files      = 'HLSNSKit/QQ/*.h'
+    qq.dependency 'HLExtensions/Core'
+    qq.dependency 'HLTPLKit/Tencent'
+    qq.dependency 'HLSNSKit/Core'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Wechat' do |wechat|
+    wechat.source_files         = 'HLSNSKit/Wechat/*'
+    wechat.public_header_files  = 'HLSNSKit/Wechat/*.h'
+    wechat.dependency 'AFNetworking'
+    wechat.dependency 'HLTPLKit/Wechat'
+    wechat.dependency 'HLExtensions/Core'
+    wechat.dependency 'HLSNSKit/Core'
+  end
+
 end

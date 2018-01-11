@@ -1,0 +1,1 @@
+../../../HLExtensions/HLExtensions/Core/Foundation/NSMutableDictionary+SafeCoding.h

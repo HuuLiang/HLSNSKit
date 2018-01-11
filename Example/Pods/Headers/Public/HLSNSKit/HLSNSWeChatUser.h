@@ -1,0 +1,1 @@
+../../../../../HLSNSKit/Wechat/HLSNSWeChatUser.h

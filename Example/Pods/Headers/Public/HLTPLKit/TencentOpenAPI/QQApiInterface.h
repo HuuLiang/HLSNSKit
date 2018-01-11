@@ -1,0 +1,1 @@
+../../../../HLTPLKit/HLTPLKit/TencentOpenAPI/TencentOpenAPI.framework/Headers/QQApiInterface.h

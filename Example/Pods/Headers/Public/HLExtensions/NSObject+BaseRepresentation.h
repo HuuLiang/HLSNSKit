@@ -1,0 +1,1 @@
+../../../HLExtensions/HLExtensions/Core/Foundation/NSObject+BaseRepresentation.h

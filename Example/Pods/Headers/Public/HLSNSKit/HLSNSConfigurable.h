@@ -1,0 +1,1 @@
+../../../../../HLSNSKit/Core/HLSNSConfigurable.h

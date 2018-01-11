@@ -1,0 +1,1 @@
+../../../../../HLSNSKit/Core/HLSNSManager.h

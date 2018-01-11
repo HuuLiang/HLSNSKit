@@ -1,0 +1,6 @@
+framework module HLSNSKit {
+  umbrella header "HLSNSKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

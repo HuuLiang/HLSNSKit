@@ -1,0 +1,1 @@
+../../../../../HLSNSKit/QQ/HLSNSQQManager.h
