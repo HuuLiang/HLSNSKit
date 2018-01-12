@@ -21,14 +21,13 @@ PODS:
     - HLSNSKit/Core (= 0.1.0)
     - HLSNSKit/QQ (= 0.1.0)
     - HLSNSKit/Wechat (= 0.1.0)
-  - HLSNSKit/Core (0.1.0)
-  - HLSNSKit/QQ (0.1.0):
+  - HLSNSKit/Core (0.1.0):
     - HLExtensions/Core
+  - HLSNSKit/QQ (0.1.0):
     - HLSNSKit/Core
     - HLTPLKit/Tencent
   - HLSNSKit/Wechat (0.1.0):
     - AFNetworking
-    - HLExtensions/Core
     - HLSNSKit/Core
     - HLTPLKit/Wechat
   - HLTPLKit/Tencent (0.1.1)
@@ -47,10 +46,10 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   HLExtensions: 746e27d751983b4d005dd8ddf81d0c6ad38fe802
-  HLSNSKit: 6c92d6ec9c7a0435709a667b9218882771b581a3
+  HLSNSKit: 7189da26826d7a2448506d6a3ba354e6a3b862c7
   HLTPLKit: 0959638831496a1637b189aec5ef2d74f8fab29c
   WechatOpenSDK: 491d965d79335070328571d3e79f714549e79a5e
 
-PODFILE CHECKSUM: 88afb80979e3e8368cc66aa7e8a3032bacd00a07
+PODFILE CHECKSUM: 45b8f2b09977774d2b72769cc3e6e31228b64ace
 
 COCOAPODS: 1.3.1

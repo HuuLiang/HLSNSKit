@@ -22,16 +22,18 @@
     {
       "name": "Core",
       "source_files": "HLSNSKit/Core/*",
-      "public_header_files": "HLSNSKit/Core/*.h"
+      "public_header_files": "HLSNSKit/Core/*.h",
+      "dependencies": {
+        "HLExtensions/Core": [
+
+        ]
+      }
     },
     {
       "name": "QQ",
       "source_files": "HLSNSKit/QQ/*",
       "public_header_files": "HLSNSKit/QQ/*.h",
       "dependencies": {
-        "HLExtensions/Core": [
-
-        ],
         "HLTPLKit/Tencent": [
 
         ],
@@ -49,9 +51,6 @@
 
         ],
         "HLTPLKit/Wechat": [
-
-        ],
-        "HLExtensions/Core": [
 
         ],
         "HLSNSKit/Core": [

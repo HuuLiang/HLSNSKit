@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <HLSNSDefines.h>
+#import "HLSNSDefines.h"
 
 @interface HLSNSManager : NSObject
 

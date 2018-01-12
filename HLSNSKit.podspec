@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files           = 'HLSNSKit/Core/*'
     core.public_header_files    = 'HLSNSKit/Core/*.h'
+    core.dependency 'HLExtensions/Core'
   end
   
   s.subspec 'QQ' do |qq|
     qq.source_files             = 'HLSNSKit/QQ/*'
     qq.public_header_files      = 'HLSNSKit/QQ/*.h'
-    qq.dependency 'HLExtensions/Core'
     qq.dependency 'HLTPLKit/Tencent'
     qq.dependency 'HLSNSKit/Core'
   end
@@ -32,7 +32,6 @@ Pod::Spec.new do |s|
     wechat.public_header_files  = 'HLSNSKit/Wechat/*.h'
     wechat.dependency 'AFNetworking'
     wechat.dependency 'HLTPLKit/Wechat'
-    wechat.dependency 'HLExtensions/Core'
     wechat.dependency 'HLSNSKit/Core'
   end
 

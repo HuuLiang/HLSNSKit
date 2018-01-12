@@ -9,8 +9,8 @@
 #import <AFNetworking.h>
 #import <HLDefines.h>
 #import <NSObject+BaseRepresentation.h>
-#import "WXApi.h"
-#import "WXApiObject.h"
+#import <WechatOpenSDK/WXApi.h>
+#import <WechatOpenSDK/WXApiObject.h>
 #import "HLSNSWeChatUser.h"
 
 static NSString *const kWeChatAuthState = @"HLSNSWeChatAuth";
